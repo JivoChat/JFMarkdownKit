@@ -28,15 +28,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "CDMarkdownKit",
+    name: "JFMarkdownKit",
     products: [
         .library(
-            name: "CDMarkdownKit",
-            targets: ["CDMarkdownKit"])
+            name: "JFMarkdownKit",
+            targets: ["JFMarkdownKit"])
     ],
     targets: [
         .target(
-            name: "CDMarkdownKit",
+            name: "JFMarkdownKit",
             path: "Source")
     ],
     swiftLanguageVersions: [3, 4]
