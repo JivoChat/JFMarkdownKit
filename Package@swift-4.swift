@@ -1,3 +1,6 @@
+// swift-tools-version:5.9
+// The swift-tools-version declares the minimum version of Swift required to build this package.
+
 //
 //  Package@swift-4.swift
 //  CDMarkdownKit
@@ -28,16 +31,16 @@
 import PackageDescription
 
 let package = Package(
-    name: "CDMarkdownKit",
+    name: "JFMarkdownKit",
+    platforms: [.iOS(.v13)],
     products: [
         .library(
-            name: "CDMarkdownKit",
-            targets: ["CDMarkdownKit"])
+            name: "JFMarkdownKit",
+            targets: ["JFMarkdownKit"])
     ],
     targets: [
         .target(
-            name: "CDMarkdownKit",
+            name: "JFMarkdownKit",
             path: "Source")
-    ],
-    swiftLanguageVersions: [3, 4]
+    ]
 )

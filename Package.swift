@@ -1,8 +1,11 @@
+// swift-tools-version:5.9
+// The swift-tools-version declares the minimum version of Swift required to build this package.
+
 //
-//  Package.swift
+//  Package@swift-3.swift
 //  CDMarkdownKit
 //
-//  Created by Christopher de Haan on 05/07/2017.
+//  Created by Christopher de Haan on 12/14/18.
 //
 //  Copyright © 2016-2018 Christopher de Haan <contact@christopherdehaan.me>
 //
@@ -29,6 +32,7 @@ import PackageDescription
 
 let package = Package(
     name: "JFMarkdownKit",
+    platforms: [.iOS(.v13)],
     products: [
         .library(
             name: "JFMarkdownKit",
@@ -38,6 +42,5 @@ let package = Package(
         .target(
             name: "JFMarkdownKit",
             path: "Source")
-    ],
-    swiftLanguageVersions: [3, 4]
+    ]
 )
