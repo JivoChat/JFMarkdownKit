@@ -1,21 +1,20 @@
-Pod::Spec.new do |s|
-  s.name             = 'JFMarkdownKit'
-  s.version          = '1.2.3'
-  s.summary          = 'An extensive Swift framework providing simple and customizable markdown parsing.'
-  s.description      = <<-DESC
+Pod::Spec.new do |spec|
+  spec.name             = 'JFMarkdownKit'
+  spec.version          = '2.0.0'
+  spec.summary          = 'An extensive Swift framework providing simple and customizable markdown parsing.'
+  spec.description      = <<-DESC
 This Swift framework handles standard markdown parsing along with the ability to parse custom elements.
                        DESC
-  s.homepage         = 'https://github.com/JivoChat/JFMarkdownKit'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Christopher de Haan' => 'contact@christopherdehaan.me' }
-  s.source           = { :git => 'https://github.com/JivoChat/JFMarkdownKit.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/dehaan_solo'
+  spec.homepage         = 'https://github.com/JivoChat/JFMarkdownKit'
+  spec.license          = { :type => 'MIT', :file => 'LICENSE' }
+  spec.author           = { 'Christopher de Haan' => 'contact@christopherdehaan.me' }
+  spec.source           = { :git => 'https://github.com/JivoChat/JFMarkdownKit.git', :tag => "v#{spec.version}" }
+  spec.social_media_url = 'https://twitter.com/dehaan_solo'
 
-  s.ios.deployment_target = '12.0'
-  s.osx.deployment_target = '10.11'
-  s.tvos.deployment_target = '9.0'
-  s.watchos.deployment_target = '2.0'
+  spec.ios.deployment_target = '12.0'
+  spec.osx.deployment_target = '10.11'
 
-  s.source_files = 'Source/*.swift'
-  s.swift_version = '5.0'
+  spec.source_files = 'Source/*.swift'
+  spec.exclude_files = 'Package.swift'
+  spec.swift_version = '5.0'
 end
